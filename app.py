@@ -105,7 +105,7 @@ def main():
     st.write("A [Faster R-CNN](https://arxiv.org/abs/1506.01497?source=post_page) model is used to perform the detections, \
     this front end (what you're reading) is built with [Streamlit](https://www.streamlit.io/) \
     and it's all hosted on [Heroku](https://www.heroku.com/).")
-    st.write("See the [code on GitHub](https://github.com/mrdbourke/airbnb-object-detection)")
+    st.write("See the [code on GitHub](https://github.com/Jam516/MEP-detection-app)")
 
 if __name__ == "__main__":
     main()
