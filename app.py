@@ -3,6 +3,7 @@ import time
 import cv2
 import sys
 import csv
+import requests
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import tensorflow as tf
@@ -107,5 +108,10 @@ def main():
     and it's all hosted on [Heroku](https://www.heroku.com/).")
     st.write("See the [code on GitHub](https://github.com/Jam516/MEP-detection-app)")
 
+def index(request):
+    r = requests.get('http://httpbin.org/status/418')
+    print(r.text)
+    return HttpResponse('<pre>' + r.text + '</pre>')
+    
 if __name__ == "__main__":
     main()
