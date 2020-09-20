@@ -1,24 +1,17 @@
 import os
-import time
 import cv2
-import sys
-import csv
 import requests
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import tensorflow as tf
 import keras_preprocessing
 import streamlit as st
 import numpy as np
 import pandas as pd
-from numpy import argmax
-from PIL import Image , ImageEnhance
+from PIL import Image
 
 from utils import label_map_util
 from utils import visualization_utils as vis_util
 from keras.preprocessing import image
 from keras_preprocessing.image import ImageDataGenerator
-from pathlib import Path
 
 
 # Set up default variables
@@ -112,6 +105,6 @@ def index(request):
     r = requests.get('http://httpbin.org/status/418')
     print(r.text)
     return HttpResponse('<pre>' + r.text + '</pre>')
-    
+
 if __name__ == "__main__":
     main()

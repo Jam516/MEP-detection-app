@@ -5,6 +5,4 @@ numpy
 pandas
 pillow
 keras==2.3.0
-pathlib
-matplotlib
 requests
