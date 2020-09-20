@@ -1,6 +1,5 @@
 import os
 import cv2
-import requests
 import tensorflow as tf
 import keras_preprocessing
 import streamlit as st
@@ -100,11 +99,6 @@ def main():
     this front end (what you're reading) is built with [Streamlit](https://www.streamlit.io/) \
     and it's all hosted on [Heroku](https://www.heroku.com/).")
     st.write("See the [code on GitHub](https://github.com/Jam516/MEP-detection-app)")
-
-def index(request):
-    r = requests.get('http://httpbin.org/status/418')
-    print(r.text)
-    return HttpResponse('<pre>' + r.text + '</pre>')
 
 if __name__ == "__main__":
     main()
