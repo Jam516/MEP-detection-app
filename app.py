@@ -15,7 +15,7 @@ from keras_preprocessing.image import ImageDataGenerator
 
 # Set up default variables
 MODEL_NAME = 'model'
-PATH_TO_CKPT = MODEL_NAME + '/optimized_model.pb'
+PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
 PATH_TO_LABELS = 'object-detection1.pbtxt'
 PATH_TO_IMAGE = 'images/out.png'
 CWD_PATH = os.getcwd()
